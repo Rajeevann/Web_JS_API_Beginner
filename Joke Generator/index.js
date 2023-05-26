@@ -15,7 +15,7 @@ let getJoke1 = () => {
 let getJoke = () => {
   jokeContainer.classList.remove("fade");
   fetch(url)
-    .then((data) => data.json())
+    .then((data) => data.json()) // this .then only fetch a promise so need to do another .then
     .then((item) => {
       jokeContainer.textContent = `${item.joke}`;
       jokeContainer.classList.add("fade");
@@ -23,5 +23,3 @@ let getJoke = () => {
 };
 
 btn.addEventListener("click", getJoke);
-
-//API Key = a1b31bae0a341283bf3c1fa7c7cbb697e2beb66f
