@@ -12,7 +12,7 @@ body {
   max-width: 600px;
   padding: 50px 40px;
   margin: 25% auto;
-  background-color: #15161a;
+  background-color: black;
   border-radius: 10px;
   /*
     positon: absolute;
@@ -38,19 +38,28 @@ p {
   word-wrap: break-word;
   line-height: 35px;
   margin: 30px 0;
+  opacity: 0; /*sets the opacity of an element. Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency so 0 is true or hidden*/
 }
 
 button {
   display: block;
-  background-color: #fab22e;
+  background-color: #fab32e87;
   border: none;
   padding: 5px;
   font-size: 18px;
   color: #171721;
   font-weight: 600;
   padding: 12px 25px;
-  margin: 5px;
+  margin: 0px auto;
   border-radius: 5px;
   cursor: pointer;
-  justify-items: center;
+}
+
+.fade {
+  opacity: 1; /*sets the opacity of an element. Opacity is the degree to which content behind an element is hidden, and is the opposite of transparency so 1 is false or show*/
+  transition: opacity 1.5s;
+}
+
+button:hover {
+  background-color: #fab32efd;
 }
