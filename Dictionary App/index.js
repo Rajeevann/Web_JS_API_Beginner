@@ -6,6 +6,12 @@ const input = document.getElementById("inp-word");
 
 const x = () => {
   let inpWord = input.value;
+
+  if (inpWord === "") {
+    result.innerHTML = "<h3>Enter a word</h3>";
+    return;
+  }
+
   fetch(`${url}${inpWord}`)
     .then((res) => res.json())
     .then((data) => {
@@ -30,6 +36,7 @@ const x = () => {
 
       sound.setAttribute("src", `${data[0].phonetics[0].sourceUrl}`);
     })
+
     .catch(() => {
       result.innerHTML = `<h3>Could not find the word</h3>`;
     });

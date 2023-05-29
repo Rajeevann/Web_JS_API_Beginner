@@ -1,0 +1,24 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    height:100vh;
+    background: linear-gradient(#ee4d38 50%, #f1e8e6  50%); /*creates an image consisting of a progressive transition between two or more colors along a straight line.*/
+
+}
+
+.container{
+    width:90%;
+    max-width: 31.25em;
+    background-color: #ffffff;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left:50%;
+    
+
+}
