@@ -49,7 +49,7 @@ body{
 h2{
     font-size: 6em;
     color: #282727;
-    position: absolute;
+    position: absolute; /* Absolute + transform + top + Left to center an item */
     transform: translate(-50%,-50%);
     top: 70%;
     left:50%;
